@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - รัชกร แซ่บุ้น</title>
+    <style>
+        body {
+            background-color: #fff0f5; /* Light sakura background */
+            font-family: 'Sarabun', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #4a3636;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        
+        /* Main Container */
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(255, 182, 193, 0.4);
+            position: relative;
+            z-index: 10;
+            border: 2px solid #ffb7c5;
+        }
+        
+        h1, h2 {
+            color: #e86a82; /* Deep pink */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-pic {
+            display: block;
+            margin: 0 auto 25px;
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border: 5px solid #ffb7c5;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .info-list {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.15em;
+            line-height: 2;
+            background-color: #fffafb;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px dashed #ffb7c5;
+        }
+
+        .info-list li {
+            margin-bottom: 10px;
+        }
+        
+        .info-list strong {
+            color: #d65c75;
+        }
+
+        .section {
+            margin-top: 40px;
+        }
+        
+        .section p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            background-color: #fffafb;
+            padding: 15px;
+            border-left: 5px solid #ffb7c5;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .interesting-pic {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        a {
+            color: #d65c75;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ff8fa3;
+            text-decoration: underline;
+        }
+
+        /* Pure CSS Sakura Falling Animation */
+        .sakura {
+            position: fixed;
+            top: -10%;
+            z-index: 1;
+            user-select: none;
+            pointer-events: none;
+            color: #ffb7c5;
+            animation: fall linear infinite, sway ease-in-out infinite alternate;
+        }
+
+        @keyframes fall {
+            0% { top: -10%; }
+            100% { top: 110%; }
+        }
+
+        @keyframes sway {
+            0% { transform: translateX(0px) rotate(0deg); }
+            100% { transform: translateX(50px) rotate(45deg); }
+        }
+
+        /* Individual Sakura Petals Settings */
+        .s1 { left: 5%; font-size: 24px; animation-duration: 9s, 3s; animation-delay: 0s, 0s; }
+        .s2 { left: 15%; font-size: 18px; animation-duration: 12s, 4s; animation-delay: 2s, 1s; }
+        .s3 { left: 25%; font-size: 22px; animation-duration: 10s, 3.5s; animation-delay: 4s, 2s; }
+        .s4 { left: 35%; font-size: 20px; animation-duration: 14s, 4.5s; animation-delay: 1s, 0.5s; }
+        .s5 { left: 45%; font-size: 26px; animation-duration: 11s, 3s; animation-delay: 3s, 1.5s; }
+        .s6 { left: 55%; font-size: 19px; animation-duration: 13s, 4s; animation-delay: 5s, 0.2s; }
+        .s7 { left: 65%; font-size: 23px; animation-duration: 9.5s, 3.2s; animation-delay: 0.5s, 1.2s; }
+        .s8 { left: 75%; font-size: 25px; animation-duration: 15s, 5s; animation-delay: 2.5s, 0.8s; }
+        .s9 { left: 85%; font-size: 21px; animation-duration: 10.5s, 3.8s; animation-delay: 1.5s, 2.1s; }
+        .s10 { left: 95%; font-size: 24px; animation-duration: 12.5s, 3.3s; animation-delay: 6s, 1s; }
+        .s11 { left: 10%; font-size: 18px; animation-duration: 11.5s, 4.1s; animation-delay: 3.5s, 2.5s; }
+        .s12 { left: 80%; font-size: 22px; animation-duration: 13.5s, 3.9s; animation-delay: 4.5s, 1.5s; }
+    </style>
+</head>
+<body>
+    <!-- Sakura Petals Background -->
+    <div class="sakura s1">🌸</div>
+    <div class="sakura s2">🌸</div>
+    <div class="sakura s3">🌸</div>
+    <div class="sakura s4">🌸</div>
+    <div class="sakura s5">🌸</div>
+    <div class="sakura s6">🌸</div>
+    <div class="sakura s7">🌸</div>
+    <div class="sakura s8">🌸</div>
+    <div class="sakura s9">🌸</div>
+    <div class="sakura s10">🌸</div>
+    <div class="sakura s11">🌸</div>
+    <div class="sakura s12">🌸</div>
+
+    <div class="container">
+        <!-- Profile Section -->
+        <img src="https://i.postimg.cc/SK3x98wk/cute-doctor-cartoon-illustration-295036-2154.avif" alt="Profile Picture" class="profile-pic">
+        <h1>แนะนำตัว</h1>
+        
+        <ul class="info-list">
+            <li><strong>ชื่อ-นามสกุล:</strong> รัชกร แซ่บุ้น</li>
+            <li><strong>ชื่อเล่น:</strong> นาย</li>
+            <li><strong>สาขาวิชา:</strong> เทคโนโลยีดิจิทัลและสารสนเทศ</li>
+            <li><strong>กลุ่มเรียน:</strong> section2</li>
+        </ul>
+
+        <!-- Q&A Section -->
+        <div class="section">
+            <h2>เป้าหมายและการเรียนรู้</h2>
+            <p><strong>เหตุผลที่อยากเรียน Full stack web development:</strong><br>
+            เรียนรู้ภาษาในการสร้างเว็บในส่วนต่างๆทั้งหน้าบ้านหลังบ้าน</p>
+            
+            <p><strong>ความคาดหวังต่อวิชานี้:</strong><br>
+            ทักษะที่เพิ่มขึ้น</p>
+            
+            <p><strong>จุดอ่อนที่ต้องพัฒนา และแนวทางการพัฒนา:</strong><br>
+            ยังไม่ค่อยถนัดการเขียนโค้ดยังมีบางส่วนที่ไม่เข้าใจ</p>
+        </div>
+
+        <!-- Inspiration Section -->
+        <div class="section">
+            <h2>เว็บไซต์ที่ชื่นชอบ</h2>
+            <p style="text-align: center; background-color: transparent; border: none;">
+                👉 <a href="https://pointerpointer.com/" target="_blank">เข้าชมเว็บไซต์ Pointer Pointer</a> 👈
+            </p>
+        </div>
+
+        <!-- Interesting Image Section -->
+        <div class="section">
+            
+            <img src="https://i.postimg.cc/Jh4kxb6B/1067403379808161832.gif" alt="Interesting Animated Picture" class="interesting-pic">
+        </div>
+    </div>
+</body>
+</html>
+
